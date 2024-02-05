@@ -131,11 +131,40 @@ a:visited {
 
 .container-1 {
    display: flex;
+   justify-content: center;
+   margin-top: 60px;
 }
 
 .card {
    display: flex;
    flex-direction: column;
+}
+
+.card__content-title-1 {
+   width: 518px;
+   color: #2f281e; /* ev. move to body */
+   font-size: 44px;
+   font-weight: 700;
+   line-height: 54px; /* 122.727% */
+}
+
+.card__content-info-1 {
+   width: 458px;
+   height: 95px;
+   color: #544837;
+   font-size: 18px;
+   line-height: 28px; /* 155.556% */ /* ev. move to body */
+}
+
+card__content {
+   display: flex;
+}
+
+.card__btn-1 {
+   width: 175px;
+   height: 53px;
+   border-radius: 4px;
+   background: #f90;
 }
 
 /* .container-2 {
