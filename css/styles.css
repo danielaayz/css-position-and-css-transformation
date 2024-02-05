@@ -1,4 +1,13 @@
 body {
+   box-sizing: border-box;
    margin: 0;
    padding: 0;
+}
+
+.header {
+   margin-top: 20px;
+   background-color: #fff;
+   display: flex;
+   position: sticky;
+   top: 20px;
 }
