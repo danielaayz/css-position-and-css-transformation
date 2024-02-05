@@ -28,6 +28,10 @@ body {
    top: 20px;
 }
 
+.logo img {
+   margin-right: 11px;
+}
+
 .menu-1 {
    width: 350px;
    list-style-type: none;
@@ -41,18 +45,18 @@ menu .menu__item {
    line-height: 28px; /* 200% */
 }
 
-/* nav ul .menu__item a,
-a:visited {
+nav ul li .link,
+:visited {
    color: #2f281e;
    text-decoration: none;
    font-size: 14px;
 }
 
-nav ul .menu__item a:hover,
-a:active {
+nav ul li .link :hover,
+:active {
    color: #f90;
    text-decoration: underline;
-} */
+}
 
 .menu-2 {
    list-style: none;
@@ -61,6 +65,7 @@ a:active {
 
 nav ul .btn {
    font-size: 16px;
+   text-decoration: none;
    border-radius: 4px;
    padding: 11px 22px 11px 25px;
    width: 102px;
@@ -69,15 +74,30 @@ nav ul .btn {
    margin-left: 29px;
    text-align: center;
    flex-shrink: 0;
+   display: inline-block;
 }
 
-nav ul .btn--first {
+nav ul .btn--first,
+:visited {
    background-color: transparent;
    color: #173a56;
    border: 1px solid #bcd0e5;
 }
 
-nav ul .btn--second {
+nav ul .btn--first :hover,
+:active {
+   color: #fff;
+   background-color: #173a56;
+}
+
+nav ul .btn--second,
+:visited {
    background-color: #f90;
    color: rgba(255, 255, 255, 1);
+}
+
+nav ul .btn--second :hover,
+:active {
+   background-color: aliceblue;
+   transform: scale(1.5);
 }
