@@ -5,8 +5,10 @@ body {
    margin: 0;
    padding: 0;
    font-family: "Poppins", sans-serif;
+   font-size: 16px;
    font-weight: 400;
    font-style: normal;
+   line-height: normal;
    color: #2f281e;
 }
 
@@ -17,6 +19,7 @@ body {
    left: 0;
    bottom: 0;
    right: 0;
+   min-width: 1400px;
    max-width: 1400px;
    flex-wrap: wrap;
    display: flex;
@@ -24,10 +27,9 @@ body {
 }
 
 .header {
-   background-color: blueviolet;
    margin-top: 20px;
    width: 100%;
-   max-width: 1400px;
+   /* max-width: 1400px; */
 }
 
 .container__nav {
@@ -85,7 +87,6 @@ body {
 
 .btn {
    list-style-type: none;
-   font-size: 16px;
    font-weight: 600;
    border-radius: 4px;
    padding: 11px 22px 11px 25px;
@@ -94,7 +95,6 @@ body {
 
 header .menu_2--btn:visited {
    text-decoration: none;
-   font-size: 16px;
    font-weight: 600;
    border-radius: 4px;
    padding: 11px 22px 11px 25px;
@@ -133,20 +133,22 @@ header .btn--second:visited {
 
 .container {
    width: 100%;
-   max-width: 1400px;
+   /* max-width: 1400px; */
    display: flex;
    align-items: center;
+   margin-bottom: 100px;
 }
 
 .container-1 {
    display: flex;
    justify-content: center;
-   margin-top: 60px;
+   margin-top: 30px;
 }
 
 .card {
-   position: relative;
+   width: 100%;
    display: flex;
+   justify-content: space-evenly;
 }
 
 .card-1 {
@@ -176,7 +178,6 @@ card__content {
 .card__btn-1 {
    color: #fff;
    font-weight: 700;
-   line-height: normal;
    text-decoration: none;
    border-radius: 4px;
    background: #f90;
@@ -191,14 +192,21 @@ card__content {
 .card__btn-2 {
    color: #f90;
    font-weight: 600;
-   line-height: normal;
    text-decoration-line: underline;
 }
 
+/* main */
+
+.main {
+   width: 100%;
+   /* position: relative; */
+}
+
 .container-2 {
-   background-color: azure;
+   width: 100%;
    display: flex;
    flex-direction: column;
+   position: relative;
 }
 
 .content-title-2 {
@@ -212,13 +220,13 @@ card__content {
    text-align: center;
    font-size: 36px;
    font-weight: 700;
-   line-height: normal;
 }
 
 .card__container-1 {
    display: flex;
    flex-direction: column;
    margin-top: 54px;
+   position: relative;
 }
 
 .icon {
@@ -231,14 +239,12 @@ card__content {
 .card__content_title-3 {
    font-size: 22px;
    font-weight: 600;
-   line-height: normal;
    margin-top: 80px;
 }
 
 .card__content-info-2 {
-   min-width: 240px;
+   width: 240px;
    color: #544837;
-   font-size: 16px; /* ev. flytta till body */
    font-weight: 500;
    line-height: 26px; /* 162.5% */
 }
@@ -251,17 +257,25 @@ card__content {
 }
 
 .container-3 {
+   width: 100%;
    display: flex;
    align-items: center;
+   justify-content: space-around;
 }
 
-/* .info-3 {
+.card__content-info-3 {
    width: 486px;
-} */
+   color: #544837;
+   font-weight: 500;
+   line-height: 26px; /* 162.5% */
+}
 
 .container-4 {
+   width: 100%;
    display: flex;
    flex-direction: row-reverse;
+   align-items: center;
+   justify-content: space-around;
 }
 
 .card-1__content {
@@ -269,18 +283,58 @@ card__content {
    flex-direction: column;
 }
 
+.card-1__content img,
+p {
+   display: inline-flex;
+   align-items: center;
+   margin-right: 30px;
+}
+
 /* page footer */
 
 .container__footer {
-   background-color: beige;
+   border-top: 2px solid rgba(188, 208, 229, 0.5);
    display: flex;
+   justify-content: space-around;
+   width: 100%;
+   align-items: flex-end;
+   padding-top: 100px;
+}
+
+.footer-card-1 {
+   display: flex;
+   align-self: flex-start;
+}
+
+footer nav ul li {
+   list-style-type: none;
 }
 
 footer nav ul li a {
-   list-style-type: none;
    text-decoration: none;
    color: #544837;
-   font-style: normal;
-   font-weight: 400;
    line-height: 35px; /* 218.75% */
+}
+
+footer input {
+   width: 325px;
+   height: 48px;
+   border-radius: 4px;
+   border: 1px solid #bcd0e5;
+   background: #fff;
+}
+
+.footer__btn {
+   border-radius: 4px;
+   background: #f90;
+   padding: 8px 15px;
+   color: #fff;
+   text-align: center;
+   font-weight: 700;
+   text-decoration: none;
+}
+
+.footer__card4 {
+   display: flex;
+   flex-direction: column;
 }
