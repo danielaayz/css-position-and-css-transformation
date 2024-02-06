@@ -58,31 +58,41 @@ body {
    justify-content: space-between;
 }
 
-header nav ul .menu__item a:link,
-a:visited {
+.menu__item:link {
    color: #2f281e;
    text-decoration: none;
 }
 
-.menu__item a:hover,
-a:active {
+.menu__item:visited {
+   color: #2f281e;
+   text-decoration: none;
+}
+
+.menu__item:hover {
+   color: #f90;
+   text-decoration: underline;
+}
+
+.menu__item:active {
    color: #f90;
    text-decoration: underline;
 }
 
 .menu_2--btn {
-   list-style-type: none;
    display: flex;
-   justify-content: space-between;
-   font-size: 16px;
-   text-decoration: none;
-   border-radius: 4px;
-   margin-right: 14px;
-   margin-left: 29px;
+   align-items: center;
 }
 
-header .menu_2--btn a:link,
-a:visited {
+.btn {
+   list-style-type: none;
+   font-size: 16px;
+   font-weight: 600;
+   border-radius: 4px;
+   padding: 11px 22px 11px 25px;
+   text-decoration: none;
+}
+
+header .menu_2--btn:visited {
    text-decoration: none;
    font-size: 16px;
    font-weight: 600;
@@ -93,41 +103,39 @@ a:visited {
 header div .btn--first {
    background-color: #fff;
    border: 1px solid #bcd0e5;
+   margin-left: 29px;
+   margin-right: 14px;
 }
 
-header .btn--first a:link,
-a:visited {
+header .btn--first:link {
+   color: #173a56;
+}
+
+header .btn--first:visited {
    color: #173a56;
 }
 
 header .btn--second {
    background-color: #f90;
+}
+
+header .btn--second:link {
    color: #fff;
 }
 
-header .btn--second a:link,
-a:visited {
+header .btn--second:visited {
    color: #fff;
 }
 
-/* nav ul .btn {
-   font-size: 16px;
-   text-decoration: none;
-   border-radius: 4px;
-   padding: 11px 22px 11px 25px;
-   width: 102px;
-   height: 46px;
-   margin-right: 14px;
-   margin-left: 29px;
-   text-align: center;
-   flex-shrink: 0;
-   display: inline-block;
-} */
+/* end navigation */
+
+/* header */
 
 .container {
    width: 100%;
    max-width: 1400px;
    display: flex;
+   align-items: center;
 }
 
 .container-1 {
@@ -137,9 +145,13 @@ a:visited {
 }
 
 .card {
+   position: relative;
+   display: flex;
+}
+
+.card-1 {
    display: flex;
    flex-direction: column;
-   position: relative;
 }
 
 .card__content-title-1 {
@@ -162,19 +174,40 @@ card__content {
 }
 
 .card__btn-1 {
-   width: 175px;
-   height: 53px;
+   color: #fff;
+   font-weight: 700;
+   line-height: normal;
+   text-decoration: none;
    border-radius: 4px;
    background: #f90;
+   padding: 15px 41px;
+   margin-right: 30px;
+}
+
+.fa-play {
+   width: 20px;
+   height: 17px;
+}
+.card__btn-2 {
+   color: #f90;
+   font-weight: 600;
+   line-height: normal;
+   text-decoration-line: underline;
 }
 
 .container-2 {
    background-color: azure;
-   width: 100%;
-   max-width: 1400px;
+   display: flex;
+   flex-direction: column;
 }
 
 .content-title-2 {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 54px;
+}
+
+.content-title-2 h2 {
    width: 539px;
    text-align: center;
    font-size: 36px;
@@ -182,21 +215,72 @@ card__content {
    line-height: normal;
 }
 
+.card__container-1 {
+   display: flex;
+   flex-direction: column;
+   margin-top: 54px;
+}
+
+.icon {
+   position: absolute;
+   top: 0;
+   width: 50px;
+   height: 50px;
+}
+
 .card__content_title-3 {
    font-size: 22px;
    font-weight: 600;
    line-height: normal;
+   margin-top: 80px;
 }
 
 .card__content-info-2 {
-   width: 240px;
+   min-width: 240px;
    color: #544837;
    font-size: 16px; /* ev. flytta till body */
    font-weight: 500;
    line-height: 26px; /* 162.5% */
 }
 
-. .icon {
-   position: absolute;
-   top: 0;
+.btn-orange {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 60px;
+   margin-bottom: 90px;
+}
+
+.container-3 {
+   display: flex;
+   align-items: center;
+}
+
+/* .info-3 {
+   width: 486px;
+} */
+
+.container-4 {
+   display: flex;
+   flex-direction: row-reverse;
+}
+
+.card-1__content {
+   display: flex;
+   flex-direction: column;
+}
+
+/* page footer */
+
+.container__footer {
+   background-color: beige;
+   display: flex;
+}
+
+footer nav ul li a {
+   list-style-type: none;
+   text-decoration: none;
+   color: #544837;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 35px; /* 218.75% */
 }
