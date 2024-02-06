@@ -139,6 +139,7 @@ a:visited {
 .card {
    display: flex;
    flex-direction: column;
+   position: relative;
 }
 
 .card__content-title-1 {
@@ -193,4 +194,9 @@ card__content {
    font-size: 16px; /* ev. flytta till body */
    font-weight: 500;
    line-height: 26px; /* 162.5% */
+}
+
+. .icon {
+   position: absolute;
+   top: 0;
 }
